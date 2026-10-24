@@ -1,17 +1,29 @@
 ---
 sidebar_label: 'VCards'
-sidebar_position: 3
+sidebar_position: 7
 ---
 
 # VCards
 
-Authors / Contributors:
-* Based on project [MixERP.Net.VCards](https://github.com/mixerp/MixERP.Net.VCards)
-* [AnthoDingo](http://github.com/AnthoDingo) - Contributor
+VCards is a standard-compliant, lightweight, and forgiving vCard parser written in C# which supports parsing and serializing vCards.
 
-VCards is a standard-compliant, lightweight, and forgiving vCard parser written in C# which supports parsing and serializing vCards. The following versions are supported:
+The following versions are supported:
 * Version 2.1
 * Version 3.0
 * Version 4.0
 
-[Detailed documentation](https://frapp42.github.io/Net.VCards/)
+## Installation
+
+```nuget
+Install-Package FrApp42.Net.VCards
+```
+
+## Usage
+
+The detailed usage is available in the [online documentation](https://frapp42.github.io/Net.VCards/).
+
+## Links
+
+* [Source code](https://github.com/FrApp42/Net.VCards)
+* [NuGet package](https://www.nuget.org/packages/FrApp42.Net.VCards)
+* [Detailed documentation](https://frapp42.github.io/Net.VCards/)

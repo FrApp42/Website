@@ -6,30 +6,15 @@ sidebar_label: 'Web'
 
 Collection of classes in C# helping you to execute web operations.
 
-## Content
-* [Installation](#installation)
-* [Examples](#examples)
-    * [Request](#request)
-        * [Simple request](#simple-request)
-        * [Sending binary file](#sending-binary-file)
-        * [Sending raw file](#sending-raw-file)
-        * [Getting binary file in response](#getting-binary-file-in-response)
-
 ## Installation
 
 ```nuget
 Install-Package FrApp42.Web
 ```
 
-## Examples
+## Usage
 
 ### Request
-
-Authors / Contributors:
-* [AnthoDingo](https://github.com/AnthoDingo) - Author (inspiration taken from the community)
-* [Sikelio](https://github.com/sikelio) - Contributor
-
----
 
 This class allows you to simplify HTTP requests.
 
@@ -40,8 +25,6 @@ You'll need `Newtosoft.Json` [**13.0.3+**](https://www.nuget.org/packages/Newton
 Install-Package Newtosoft.Json
 ```
 :::
-
----
 
 #### Simple request
 
@@ -188,3 +171,8 @@ else
     // Other cases
 }
 ```
+
+## Links
+
+* [Source code](https://github.com/FrApp42/Tools)
+* [NuGet package](https://www.nuget.org/packages/FrApp42.Web)

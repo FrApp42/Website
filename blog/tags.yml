@@ -22,3 +22,31 @@ web:
   label: Web
   permalink: /web
   description: Articles about Web package
+acr122u:
+  label: ACR122U
+  permalink: /acr122u
+  description: Articles about ACR122U package
+tplink:
+  label: TPLink
+  permalink: /tplink
+  description: Articles about TPLink library
+wpf:
+  label: WPF
+  permalink: /wpf
+  description: Articles about WPF packages
+deskpilot:
+  label: DeskPilot
+  permalink: /deskpilot
+  description: Articles about DeskPilot
+rustdesk:
+  label: RustDesk
+  permalink: /rustdesk
+  description: Articles about RustDesk
+factos:
+  label: Factos
+  permalink: /factos
+  description: Articles about Factos
+blazor:
+  label: Blazor
+  permalink: /blazor
+  description: Articles about Blazor

@@ -6,45 +6,21 @@ sidebar_label: 'System'
 
 Collection of classes in C# helping you to execute system operations.
 
-## Content
-* [Installation](#installation)
-* [Examples](#examples)
-    * [Avake](#avake)
-        * [Simple usage](#simple-usage)
-        * [Log Awake error](#log-awake-error)
-        * [Updated version of Power Awake](#updated-version-of-power-awake)
-    * [IsOnline](#isonline)
-        * [Check if device is online](#check-if-device-is-online)
-    * [Shutdown](#shutdown-windows-only)
-        * [Shutdown a specific computer](#shutdown-a-specific-computer)
-        * [Ping before shutdown](#ping-before-shutdown)
-        * [Log off the current user](#log-off-the-current-user)
-        * [Shutdown and sign on automatically](#shutdown-and-sign-on-automatically)
-        * [Set a timeout and add a custom reason for the shutdown](#set-a-timeout-and-add-a-custom-reason-for-the-shutdown)
-    * [WakeOnLan](#wakeonlan)
-
 ## Installation
 
 ```nuget
 Install-Package FrApp42.System
 ```
 
-## Examples
+## Usage
 
 ### Avake
-
-Authors / Contributors:
-* [AnthoDingo](https://github.com/AnthoDingo) - Author (taken from PowerToys)
-
----
 
 This class allows you to hanfle the awake on machines.
 
 :::warning
 This only works on Windows.
 :::
-
----
 
 #### V1
 #### Simple usage
@@ -128,14 +104,7 @@ Awake.SetNoKeepAwake();
 
 ### IsOnline
 
-Authors / Contributors:
-* [AnthoDingo](https://github.com/AnthoDingo) - Author
-
----
-
 This allows you to check if a machine is online with a ping.
-
----
 
 #### Check if device is online
 
@@ -152,19 +121,11 @@ bool isOnline = online.Check();
 
 ### Shutdown (Windows-only)
 
-Authors / Contributors:
-* [Sikelio](https://github.com/sikelio) - Author
-* [AnthoDingo](https://github.com/AnthoDingo) - Contributor
-
----
-
 This class allow you to shutdown remotly Windows machines.
 
 :::warning
 This only work on Windows machines.
 :::
-
----
 
 #### Shutdown a specific computer
 
@@ -279,15 +240,7 @@ else
 
 ### WakeOnLan
 
-Authors / Contributors:
-* [Poul Bak](https://stackoverflow.com/users/5741643/poul-bak) - Original author
-* [Sikelio](https://github.com/sikelio) - Contributor
-
----
-
 This class allows you to use WOL to power on machine of their MAC address.
-
----
 
 ```csharp title="Program.cs"
 using FrApp42.System.Net;
@@ -296,3 +249,8 @@ string macAddress = "your-mac-address";
 
 await WakeOnLan.WakeUp(macAddress);
 ```
+
+## Links
+
+* [Source code](https://github.com/FrApp42/Tools)
+* [NuGet package](https://www.nuget.org/packages/FrApp42.System)
