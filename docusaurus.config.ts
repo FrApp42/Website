@@ -8,15 +8,14 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://frenchyapps42.fr',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/website',
+  url: 'https://frapp42.fr',
+  // Served from the root of the custom domain
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'FrApp42', // Usually your GitHub org/user name.
-  projectName: 'website', // Usually your repo name.
+  projectName: 'Website', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -35,16 +34,11 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/FrApp42/Docs/tree/main',
+          editUrl: 'https://github.com/FrApp42/Website/tree/main',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/FrApp42/Website/tree/main',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -59,7 +53,7 @@ const config: Config = {
     navbar: {
       title: 'Frenchy Apps 42',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Frenchy Apps 42 logo',
         src: 'img/logo.svg',
       },
       items: [
