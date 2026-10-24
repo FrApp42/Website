@@ -11,7 +11,7 @@ tags: [acr122u, csharp, releases]
 * Ziel-Framework .NET 10 hinzugefügt
 * `PCSC` auf 7.0.1 aktualisiert
 
-<!-- truncate -->
+{/* truncate */}
 
 ## Changelog
 

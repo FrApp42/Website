@@ -9,7 +9,7 @@ tags: [acr122u, csharp, releases]
 
 First release of `FrApp42.ACR122U`, a simple library to read NFC cards with an ACR122U card reader.
 
-<!-- truncate -->
+{/* truncate */}
 
 The [documentation](/docs/acr122u/) is ready and you can start using the package in your C# projects.
 

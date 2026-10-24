@@ -9,7 +9,7 @@ tags: [wpf, csharp, releases]
 
 Première release de `FrApp42.WPF.Pwsh`, un contrôle WPF qui héberge une vraie session PowerShell (ConPTY). Le shell démarre avec le contrôle, est affiché via le contrôle Windows Terminal et déclenche un événement lorsqu'il se termine.
 
-<!-- truncate -->
+{/* truncate */}
 
 ```csharp
 var terminal = new FrApp42.WPF.Pwsh.PwshTerminal();

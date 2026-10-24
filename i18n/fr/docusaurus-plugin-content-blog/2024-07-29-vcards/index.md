@@ -11,7 +11,7 @@ Lancement du paquet Net.VCards. C'est un fork de [MixERP.Net.VCards](https://git
 
 VCards est un parseur vCard léger, conforme au standard et tolérant, écrit en C#, qui permet de lire et de sérialiser des vCards.
 
-<!-- truncate -->
+{/* truncate */}
 
 La [documentation](https://frapp42.github.io/Net.VCards/) est prête et vous pouvez dès maintenant utiliser ces paquets dans vos projets C#.
 

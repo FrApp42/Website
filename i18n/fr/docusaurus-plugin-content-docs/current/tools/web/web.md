@@ -26,7 +26,7 @@ Install-Package Newtosoft.Json
 ```
 :::
 
-#### Requête simple {#simple-request}
+#### Requête simple \{#simple-request\}
 
 ```cs title="Program.cs"
 using FrApps42.Web.API;
@@ -72,7 +72,7 @@ namespace Program
 }
 ```
 
-#### Envoyer un fichier binaire {#sending-binary-file}
+#### Envoyer un fichier binaire \{#sending-binary-file\}
 
 ```cs title="Program.cs"
 using FrApps42.Web.API;
@@ -118,7 +118,7 @@ namespace Program
 }
 ```
 
-#### Envoyer un fichier brut {#sending-raw-file}
+#### Envoyer un fichier brut \{#sending-raw-file\}
 
 ```cs title="Program.cs"
 using FrApps42.Web.API;
@@ -151,7 +151,7 @@ else
 }
 ```
 
-#### Recevoir un fichier binaire en réponse {#getting-binary-file-in-response}
+#### Recevoir un fichier binaire en réponse \{#getting-binary-file-in-response\}
 ```cs title="Program.cs"
 using FrApps42.Web.API;
 using System.Net;

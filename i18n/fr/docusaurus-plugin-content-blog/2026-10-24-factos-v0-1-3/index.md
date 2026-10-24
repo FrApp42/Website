@@ -9,7 +9,7 @@ tags: [factos, csharp, blazor, releases]
 
 * Champs personnalisés : définitions, saisie et impression
 
-<!-- truncate -->
+{/* truncate */}
 
 ## Changelog
 

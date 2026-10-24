@@ -11,7 +11,7 @@ tags: [tools, csharp, releases]
 * Correction des exemples
 * Ajout d'une icône aux paquets
 
-<!-- truncate -->
+{/* truncate */}
 
 ## Changelog
 

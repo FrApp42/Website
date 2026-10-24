@@ -9,7 +9,7 @@ tags: [deskpilot, rustdesk, releases]
 
 Première release de DeskPilot, un serveur d'API, une console web et un serveur de rendez-vous open source pour **RustDesk**, compatible avec le client RustDesk officiel.
 
-<!-- truncate -->
+{/* truncate */}
 
 DeskPilot reprend les fonctions de RustDesk Server Pro : comptes, carnets d'adresses partagés, appareils, stratégies, journaux et SSO (OIDC et LDAP). Grâce à son fork de `hbbs`, il ajoute aussi le contrôle d'accès, le blocage d'appareils et le changement d'ID.
 

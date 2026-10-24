@@ -9,7 +9,7 @@ tags: [factos, csharp, blazor, releases]
 
 * Docker: `appsettings.local.json` is now written directly in `App_Data`
 
-<!-- truncate -->
+{/* truncate */}
 
 ## Changelog
 

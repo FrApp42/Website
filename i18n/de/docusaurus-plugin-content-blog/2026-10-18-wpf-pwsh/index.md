@@ -9,7 +9,7 @@ tags: [wpf, csharp, releases]
 
 Erstes Release von `FrApp42.WPF.Pwsh`, einem WPF-Steuerelement, das eine echte PowerShell-Sitzung (ConPTY) hostet. Die Shell startet mit dem Steuerelement, wird über das Windows-Terminal-Steuerelement dargestellt und löst ein Ereignis aus, wenn sie beendet wird.
 
-<!-- truncate -->
+{/* truncate */}
 
 ```csharp
 var terminal = new FrApp42.WPF.Pwsh.PwshTerminal();

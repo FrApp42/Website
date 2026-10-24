@@ -9,7 +9,7 @@ tags: [factos, csharp, blazor, releases]
 
 * Custom fields: definitions, input and printing
 
-<!-- truncate -->
+{/* truncate */}
 
 ## Changelog
 

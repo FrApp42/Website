@@ -9,7 +9,7 @@ tags: [factos, csharp, blazor, releases]
 
 * Docker : correction de `blazor.web.js` absent de l'image (404)
 
-<!-- truncate -->
+{/* truncate */}
 
 ## Changelog
 
