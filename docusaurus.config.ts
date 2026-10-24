@@ -29,7 +29,12 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'fr', 'de'],
+    localeConfigs: {
+      en: {label: 'English', htmlLang: 'en-US'},
+      fr: {label: 'Français', htmlLang: 'fr-FR'},
+      de: {label: 'Deutsch', htmlLang: 'de-DE'},
+    },
   },
 
   presets: [
@@ -71,6 +76,10 @@ const config: Config = {
           to: '/blog',
           label: 'Blog',
           position: 'left'
+        },
+        {
+          type: 'localeDropdown',
+          position: 'right',
         },
         {
           href: 'https://github.com/FrApp42',

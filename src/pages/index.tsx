@@ -1,6 +1,7 @@
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
+import Translate, {translate} from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
@@ -21,7 +22,9 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Get Started
+            <Translate id="homepage.mainButton" description="The main button of the home page">
+              Get Started
+            </Translate>
           </Link>
         </div>
       </div>
@@ -33,7 +36,11 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      description="A dev team in peace with Open Source">
+      description={translate({
+        id: 'homepage.description',
+        message: 'A dev team in peace with Open Source',
+        description: 'The meta description of the home page',
+      })}>
       <HomepageHeader />
       <main>
         <HomepageFeatures />
