@@ -9,6 +9,8 @@ tags: [tools, system, csharp, releases]
 
 * Added awake class
 
+<!-- truncate -->
+
 ## Changelog
 
 You can read the changelog with the following link: [changelog](https://github.com/FrApp42/Tools/releases/tag/system-1.0.2).
