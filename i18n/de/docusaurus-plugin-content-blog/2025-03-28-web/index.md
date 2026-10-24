@@ -10,7 +10,7 @@ tags: [tools, web, csharp, releases]
 * Korrektur bei der Serialisierung
 * Methode zum Senden von Binärdateien (siehe [Binärdatei senden](/docs/tools/web/#sending-binary-file))
 
-<!-- truncate -->
+{/* truncate */}
 
 ## Changelog
 

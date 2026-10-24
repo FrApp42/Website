@@ -9,7 +9,7 @@ tags: [tools, system, csharp, releases]
 
 * Klasse Awake hinzugefügt
 
-<!-- truncate -->
+{/* truncate */}
 
 ## Changelog
 

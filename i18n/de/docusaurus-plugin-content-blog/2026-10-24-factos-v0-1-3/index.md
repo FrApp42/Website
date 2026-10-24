@@ -9,7 +9,7 @@ tags: [factos, csharp, blazor, releases]
 
 * Benutzerdefinierte Felder: Definition, Eingabe und Druck
 
-<!-- truncate -->
+{/* truncate */}
 
 ## Changelog
 

@@ -135,6 +135,11 @@ const config: Config = {
       additionalLanguages: ['csharp']
     },
   } satisfies Preset.ThemeConfig,
+
+  future: {
+    v4: true,
+    faster: true,
+  }
 };
 
 export default config;

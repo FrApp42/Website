@@ -10,7 +10,7 @@ tags: [tools, web, csharp, releases]
 * Fix: Antworten ohne Inhalt werden behandelt
 * Build-Version aktualisiert
 
-<!-- truncate -->
+{/* truncate */}
 
 ## Changelog
 

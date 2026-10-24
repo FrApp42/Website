@@ -9,7 +9,7 @@ tags: [tplink, csharp, releases]
 
 First release of the TPLink library, an unofficial C# library to read and send SMS with a TP-Link Archer MR600 router.
 
-<!-- truncate -->
+{/* truncate */}
 
 It is based on [plewin/tp-link-modem-router](https://github.com/plewin/tp-link-modem-router) and [hercule115/TPLink-Archer](https://github.com/hercule115/TPLink-Archer). The [documentation](/docs/tplink/) is ready.
 

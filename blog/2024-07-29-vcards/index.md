@@ -11,7 +11,7 @@ It's the launch Net.VCards package. It's a fork from [MixERP.Net.VCards](https:/
 
 VCards is a standard-compliant, lightweight, and forgiving vCard parser written in C# which supports parsing and serializing vCards.
 
-<!-- truncate -->
+{/* truncate */}
 
 The [documentation](https://frapp42.github.io/Net.VCards/) is ready and you can start using these packages in your C# projects.
 

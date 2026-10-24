@@ -14,7 +14,7 @@ Install-Package FrApp42.System
 
 ## Verwendung
 
-### Avake {#avake}
+### Avake \{#avake\}
 
 Mit dieser Klasse kannst du den Ruhezustand von Rechnern steuern.
 
@@ -23,7 +23,7 @@ Funktioniert nur unter Windows.
 :::
 
 #### V1
-#### Einfache Verwendung {#simple-usage}
+#### Einfache Verwendung \{#simple-usage\}
 ```cs title="Program.cs"
 using FrApps42.System.Computer.Awake.v1;
 ...
@@ -41,7 +41,7 @@ Awake.SetNoKeepAwake();
 Awake.CompleteExit(0, false, "AppName");
 ```
 
-#### Awake-Fehler protokollieren {#log-awake-error}
+#### Awake-Fehler protokollieren \{#log-awake-error\}
 ```cs title="Program.cs"
 using FrApps42.System.Computer.Awake.v1;
 ...
@@ -74,7 +74,7 @@ Awake.CompleteExit(0, false, "AppName");
 Deaktiviere in V2 unbedingt KeepAwake, bevor die Anwendung geschlossen wird.
 :::
 
-#### Aktualisierte Version von Power Awake {#updated-version-of-power-awake}
+#### Aktualisierte Version von Power Awake \{#updated-version-of-power-awake\}
 ```cs title="Program.cs"
 using FrApps42.System.Computer.Awake.v1;
 ...
@@ -102,11 +102,11 @@ Awake.SetTimedKeepAwake(3600, false);
 Awake.SetNoKeepAwake();
 ```
 
-### IsOnline {#isonline}
+### IsOnline \{#isonline\}
 
 Damit kannst du per Ping prüfen, ob ein Rechner online ist.
 
-#### Prüfen, ob ein Gerät online ist {#check-if-device-is-online}
+#### Prüfen, ob ein Gerät online ist \{#check-if-device-is-online\}
 
 ```csharp title="Program.cs"
 using FrApp42.System.Net;
@@ -119,7 +119,7 @@ IsOnline online = new(address, timeout);
 bool isOnline = online.Check();
 ```
 
-### Shutdown (nur Windows) {#shutdown-windows-only}
+### Shutdown (nur Windows) \{#shutdown-windows-only\}
 
 Mit dieser Klasse kannst du Windows-Rechner aus der Ferne herunterfahren.
 
@@ -127,7 +127,7 @@ Mit dieser Klasse kannst du Windows-Rechner aus der Ferne herunterfahren.
 Funktioniert nur auf Windows-Rechnern.
 :::
 
-#### Einen bestimmten Computer herunterfahren {#shutdown-a-specific-computer}
+#### Einen bestimmten Computer herunterfahren \{#shutdown-a-specific-computer\}
 
 ```csharp title="Program.cs"
 using FrApp42.System.Computer.Shutdown;
@@ -151,7 +151,7 @@ else
 }
 ```
 
-#### Ping vor dem Herunterfahren {#ping-before-shutdown}
+#### Ping vor dem Herunterfahren \{#ping-before-shutdown\}
 ```cs
 using FrApp42.System.Computer.Shutdown;
 
@@ -174,7 +174,7 @@ else
 }
 ```
 
-#### Den aktuellen Benutzer abmelden {#log-off-the-current-user}
+#### Den aktuellen Benutzer abmelden \{#log-off-the-current-user\}
 
 ```csharp title="Program.cs"
 using FrApp42.System.Computer.Shutdown;
@@ -195,7 +195,7 @@ else
 }
 ```
 
-#### Herunterfahren und automatisch anmelden {#shutdown-and-sign-on-automatically}
+#### Herunterfahren und automatisch anmelden \{#shutdown-and-sign-on-automatically\}
 
 ```csharp title="Program.cs"
 using FrApp42.System.Computer.Shutdown;
@@ -216,7 +216,7 @@ else
 }
 ```
 
-#### Zeitlimit und eigenen Grund für das Herunterfahren festlegen {#set-a-timeout-and-add-a-custom-reason-for-the-shutdown}
+#### Zeitlimit und eigenen Grund für das Herunterfahren festlegen \{#set-a-timeout-and-add-a-custom-reason-for-the-shutdown\}
 
 ```csharp title="Program.cs"
 using FrApp42.System.Computer.Shutdown;
@@ -238,7 +238,7 @@ else
 }
 ```
 
-### WakeOnLan {#wakeonlan}
+### WakeOnLan \{#wakeonlan\}
 
 Mit dieser Klasse kannst du einen Rechner über seine MAC-Adresse per Wake-on-LAN einschalten.
 

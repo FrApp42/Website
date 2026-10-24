@@ -9,7 +9,7 @@ tags: [tools, web, csharp, releases]
 
 * `HttpClient.Timeout` wird jetzt über die Eigenschaft `Timeout` von `Request` bereitgestellt
 
-<!-- truncate -->
+{/* truncate */}
 
 ## Changelog
 

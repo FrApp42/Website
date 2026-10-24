@@ -10,7 +10,7 @@ tags: [tools, web, csharp, releases]
 * Serializing fix
 * Binary file sending method (see [Sending binary file](/docs/tools/web/#sending-binary-file))
 
-<!-- truncate -->
+{/* truncate */}
 
 ## Changelog
 

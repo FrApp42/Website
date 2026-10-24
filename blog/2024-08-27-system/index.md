@@ -9,7 +9,7 @@ tags: [tools, system, csharp, releases]
 
 * Fixed `Awake` (v1 & v2)
 
-<!-- truncate -->
+{/* truncate */}
 
 ## Changelog
 

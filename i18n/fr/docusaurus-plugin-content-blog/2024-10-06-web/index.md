@@ -10,7 +10,7 @@ tags: [tools, web, csharp, releases]
 * Prise en charge de la désérialisation XML
 * Corrections de la CI
 
-<!-- truncate -->
+{/* truncate */}
 
 ## Changelog
 

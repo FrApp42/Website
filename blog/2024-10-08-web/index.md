@@ -9,7 +9,7 @@ tags: [tools, web, csharp, releases]
 
 * Fix: XML media type response
 
-<!-- truncate -->
+{/* truncate */}
 
 ## Changelog
 

@@ -13,7 +13,7 @@ Lancement de nos premiers paquets NuGet :
 
 Cela nous a pris un certain temps, mais d'autres paquets arrivent bientôt 👀. Abonnez-vous à notre [GitHub](https://github.com/FrApp42) pour être informé des prochaines releases.
 
-<!-- truncate -->
+{/* truncate */}
 
 La [documentation](/docs/tools/) est prête et vous pouvez dès maintenant utiliser ces paquets dans vos projets C#.
 

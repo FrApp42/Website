@@ -11,7 +11,7 @@ tags: [acr122u, csharp, releases]
 * Ajout de la méthode `UpdateBinary()`
 * Ajout de tests unitaires (MSTest)
 
-<!-- truncate -->
+{/* truncate */}
 
 ## Changelog
 

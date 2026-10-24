@@ -10,7 +10,7 @@ tags: [tools, web, csharp, releases]
 * Ajout de tests
 * Ajout de `RunGetGytes()` dans la classe `Request`
 
-<!-- truncate -->
+{/* truncate */}
 
 ## Changelog
 

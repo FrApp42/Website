@@ -10,7 +10,7 @@ tags: [tools, web, csharp, releases]
 * Fix: handled responses with null content
 * Updated build version
 
-<!-- truncate -->
+{/* truncate */}
 
 ## Changelog
 

@@ -12,7 +12,7 @@ tags: [tools, web, csharp, releases]
 * Plusieurs frameworks cibles (.NET 8 à 10)
 * Prise en charge de `TextBody`
 
-<!-- truncate -->
+{/* truncate */}
 
 ## Changelog
 

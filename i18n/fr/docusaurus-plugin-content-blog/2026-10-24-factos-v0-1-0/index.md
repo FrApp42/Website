@@ -9,7 +9,7 @@ tags: [factos, csharp, blazor, releases]
 
 Première release de Factos, un clone d'[InvoiceShelf](https://github.com/InvoiceShelf/InvoiceShelf) réécrit en C# / Blazor (.NET 10) : devis, factures, paiements, dépenses et achats, avec une API REST compatible InvoiceShelf.
 
-<!-- truncate -->
+{/* truncate */}
 
 :::caution
 Factos est en cours de développement. L'interface web est utilisable de bout en bout, mais l'API `/api/v1` n'est portée que partiellement.

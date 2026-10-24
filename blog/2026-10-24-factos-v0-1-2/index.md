@@ -9,7 +9,7 @@ tags: [factos, csharp, blazor, releases]
 
 * Docker: fixed `blazor.web.js` missing from the image (404)
 
-<!-- truncate -->
+{/* truncate */}
 
 ## Changelog
 
