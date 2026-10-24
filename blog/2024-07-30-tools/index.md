@@ -11,6 +11,8 @@ tags: [tools, csharp, releases]
 * Examples fix
 * Added icon to packages
 
+<!-- truncate -->
+
 ## Changelog
 
 You can read the changelog with the following link: [changelog](https://github.com/FrApp42/Tools/releases/tag/1.0.1).

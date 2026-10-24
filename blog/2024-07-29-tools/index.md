@@ -13,6 +13,8 @@ It's the launch of our first NuGet packages:
 
 It takes us quite a time, but there will be more packages soon 👀. You can subscribe to our [GitHub](https://github.com/FrApp42) to be notified of future releases.
 
+<!-- truncate -->
+
 The [documentation](/docs/tools/) is ready and you can start using these packages in your C# projects.
 
 ## What's new ?

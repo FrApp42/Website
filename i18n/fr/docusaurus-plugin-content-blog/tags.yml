@@ -1,0 +1,52 @@
+tools:
+  label: Tools
+  permalink: /tools
+  description: Articles sur le dépôt « Tools »
+csharp:
+  label: C#
+  permalink: /csharp
+  description: Articles sur C#
+releases:
+  label: Releases
+  permalink: /releases
+  description: Articles sur nos releases
+vcards:
+  label: VCards
+  permalink: /vcards
+  description: Articles sur le paquet VCards
+system:
+  label: System
+  permalink: /system
+  description: Articles sur le paquet System
+web:
+  label: Web
+  permalink: /web
+  description: Articles sur le paquet Web
+acr122u:
+  label: ACR122U
+  permalink: /acr122u
+  description: Articles sur le paquet ACR122U
+tplink:
+  label: TPLink
+  permalink: /tplink
+  description: Articles sur la bibliothèque TPLink
+wpf:
+  label: WPF
+  permalink: /wpf
+  description: Articles sur les paquets WPF
+deskpilot:
+  label: DeskPilot
+  permalink: /deskpilot
+  description: Articles sur DeskPilot
+rustdesk:
+  label: RustDesk
+  permalink: /rustdesk
+  description: Articles sur RustDesk
+factos:
+  label: Factos
+  permalink: /factos
+  description: Articles sur Factos
+blazor:
+  label: Blazor
+  permalink: /blazor
+  description: Articles sur Blazor

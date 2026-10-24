@@ -1,0 +1,30 @@
+{
+  "link.title.Helpful links": {
+    "message": "Nützliche Links",
+    "description": "The title of the footer links column with title=Helpful links in the footer"
+  },
+  "link.title.Our work": {
+    "message": "Unsere Projekte",
+    "description": "The title of the footer links column with title=Our work in the footer"
+  },
+  "link.item.label.Docs": {
+    "message": "Docs",
+    "description": "The label of footer link with label=Docs linking to /docs/intro"
+  },
+  "link.item.label.Blog": {
+    "message": "Blog",
+    "description": "The label of footer link with label=Blog linking to /blog"
+  },
+  "link.item.label.Public Projects": {
+    "message": "Öffentliche Projekte",
+    "description": "The label of footer link with label=Public Projects linking to https://github.com/orgs/FrApp42/repositories"
+  },
+  "link.item.label.Nuget Packages": {
+    "message": "NuGet-Pakete",
+    "description": "The label of footer link with label=Nuget Packages linking to https://www.nuget.org/profiles/FrenchyApps42"
+  },
+  "copyright": {
+    "message": "© 2026 Frenchy Apps 42",
+    "description": "The footer copyright"
+  }
+}

@@ -10,6 +10,8 @@ tags: [tools, web, csharp, releases]
 * Added tests
 * Added `RunGetGytes()` in `Request` class
 
+<!-- truncate -->
+
 ## Changelog
 
 You can read the changelog with the following link: [changelog](https://github.com/FrApp42/Tools/releases/tag/web-1.1.0).
