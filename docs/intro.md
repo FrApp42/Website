@@ -16,6 +16,7 @@ Most of our libraries are written in C# and distributed as [NuGet packages](http
 | Project | Description | Documentation |
 |---|---|---|
 | ACR122U | Read NFC cards with an ACR122U card reader | [ACR122U](/docs/acr122u/) |
+| Axios.Net | An axios-like HTTP client for .NET | [Axios.Net](/docs/axios-net/) |
 | Tools | `FrApp42.System` and `FrApp42.Web`: helpers for system and web operations | [Tools](/docs/tools/) |
 | TPLink | Read and send SMS with a TP-Link Archer MR600 router | [TPLink](/docs/tplink/) |
 | VCards | vCard parser and serializer (2.1, 3.0 and 4.0) | [VCards](/docs/v-cards/) |
