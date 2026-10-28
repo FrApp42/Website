@@ -16,6 +16,7 @@ La plupart de nos bibliothèques sont écrites en C# et distribuées sous forme 
 | Projet | Description | Documentation |
 |---|---|---|
 | ACR122U | Lire des cartes NFC avec un lecteur ACR122U | [ACR122U](/docs/acr122u/) |
+| Axios.Net | Client HTTP pour .NET avec une syntaxe proche d'axios | [Axios.Net](/docs/axios-net/) |
 | Tools | `FrApp42.System` et `FrApp42.Web` : utilitaires pour les opérations système et web | [Tools](/docs/tools/) |
 | TPLink | Lire et envoyer des SMS avec un routeur TP-Link Archer MR600 | [TPLink](/docs/tplink/) |
 | VCards | Parseur et sérialiseur vCard (2.1, 3.0 et 4.0) | [VCards](/docs/v-cards/) |

@@ -50,3 +50,7 @@ blazor:
   label: Blazor
   permalink: /blazor
   description: Artikel zu Blazor
+axios-net:
+  label: Axios.Net
+  permalink: /axios-net
+  description: Artikel zu Axios.Net
