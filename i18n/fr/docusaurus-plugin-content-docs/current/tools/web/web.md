@@ -18,6 +18,10 @@ Install-Package FrApp42.Web
 
 Cette classe simplifie les requêtes HTTP.
 
+:::tip
+Vous préférez une syntaxe proche d'[axios](https://axios.rest) ? Découvrez [Axios.Net](/docs/axios-net/), un paquet distinct avec un guide pour migrer depuis `Request`.
+:::
+
 :::info
 Le paquet NuGet `Newtosoft.Json` [**13.0.3+**](https://www.nuget.org/packages/Newtonsoft.Json/13.0.3) est nécessaire pour utiliser la classe `Request`.
 

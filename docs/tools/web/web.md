@@ -18,6 +18,10 @@ Install-Package FrApp42.Web
 
 This class allows you to simplify HTTP requests.
 
+:::tip
+Prefer an [axios](https://axios.rest)-like syntax? Have a look at [Axios.Net](/docs/axios-net/), a separate package with a guide to move over from `Request`.
+:::
+
 :::info
 You'll need `Newtosoft.Json` [**13.0.3+**](https://www.nuget.org/packages/Newtonsoft.Json/13.0.3) nuget package to use the `Request` class.
 
