@@ -1,0 +1,10 @@
+{
+  "label": "Axios.Net",
+  "namespaces": [
+    "AxiosNet.Client",
+    "AxiosNet.Config",
+    "AxiosNet.Errors",
+    "AxiosNet.Interceptors",
+    "AxiosNet.Models"
+  ]
+}
