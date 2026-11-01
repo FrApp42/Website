@@ -166,6 +166,46 @@ AxiosResponse<byte[]> file = await api.Get<byte[]>("/big-file", new()
 });
 ```
 
+## Dependency injection
+
+The `Axios.Net.Extensions.DependencyInjection` package registers `AxiosClient` in a `Microsoft.Extensions.DependencyInjection` container.
+
+```nuget
+Install-Package Axios.Net.Extensions.DependencyInjection
+```
+
+or with the .NET CLI:
+
+```bash
+dotnet add package Axios.Net.Extensions.DependencyInjection
+```
+
+```cs title="Program.cs"
+using AxiosNet.Extensions.DependencyInjection;
+
+services.AddAxios(c => c.BaseUrl = "https://api.test/v1/");
+```
+
+`AxiosClient` is registered as a singleton, so inject it where you need it:
+
+```cs title="UserService.cs"
+public class UserService(AxiosClient api)
+{
+    public Task<AxiosResponse<User>> Get(int id) => api.Get<User>($"/users/{id}");
+}
+```
+
+The client sends its requests through an [`IHttpClientFactory`](https://learn.microsoft.com/dotnet/core/extensions/httpclient-factory) named client called `Axios.Net`. Chain on it to add handlers, such as logging or resilience:
+
+```cs title="Program.cs"
+services.AddHttpClient("Axios.Net")
+    .AddHttpMessageHandler<MyLoggingHandler>();
+```
+
+:::note
+Because the handler comes from the factory, `MaxRedirects`, `Decompress` and `Proxy` are no longer read from the request config: configure them on the primary handler (`ConfigurePrimaryHttpMessageHandler`). The singleton also keeps the handler it was created with, so it is not recycled and DNS changes are not picked up for the lifetime of the app.
+:::
+
 ## Request config
 
 | Group | Options |
@@ -228,4 +268,5 @@ Axios.Net is released under the **AGPL-3.0-or-later** license.
 
 * [Source code](https://github.com/FrApp42/Axios.Net)
 * [NuGet package: Axios.Net](https://www.nuget.org/packages/Axios.Net)
+* [NuGet package: Axios.Net.Extensions.DependencyInjection](https://www.nuget.org/packages/Axios.Net.Extensions.DependencyInjection)
 * [axios documentation](https://axios.rest)

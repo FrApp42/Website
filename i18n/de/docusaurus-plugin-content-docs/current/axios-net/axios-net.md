@@ -166,6 +166,46 @@ AxiosResponse<byte[]> file = await api.Get<byte[]>("/big-file", new()
 });
 ```
 
+## Dependency Injection
+
+Das Paket `Axios.Net.Extensions.DependencyInjection` registriert `AxiosClient` in einem `Microsoft.Extensions.DependencyInjection`-Container.
+
+```nuget
+Install-Package Axios.Net.Extensions.DependencyInjection
+```
+
+oder mit der .NET CLI:
+
+```bash
+dotnet add package Axios.Net.Extensions.DependencyInjection
+```
+
+```cs title="Program.cs"
+using AxiosNet.Extensions.DependencyInjection;
+
+services.AddAxios(c => c.BaseUrl = "https://api.test/v1/");
+```
+
+`AxiosClient` wird als Singleton registriert, du kannst ihn also überall injizieren, wo du ihn brauchst:
+
+```cs title="UserService.cs"
+public class UserService(AxiosClient api)
+{
+    public Task<AxiosResponse<User>> Get(int id) => api.Get<User>($"/users/{id}");
+}
+```
+
+Der Client sendet seine Anfragen über einen benannten [`IHttpClientFactory`](https://learn.microsoft.com/dotnet/core/extensions/httpclient-factory)-Client namens `Axios.Net`. Hänge dich daran, um Handler hinzuzufügen, etwa für Logging oder Resilienz:
+
+```cs title="Program.cs"
+services.AddHttpClient("Axios.Net")
+    .AddHttpMessageHandler<MyLoggingHandler>();
+```
+
+:::note
+Da der Handler aus der Factory stammt, werden `MaxRedirects`, `Decompress` und `Proxy` nicht mehr aus der Anfrage-Konfiguration gelesen: Konfiguriere sie am primären Handler (`ConfigurePrimaryHttpMessageHandler`). Der Singleton behält außerdem den Handler, mit dem er erstellt wurde: Er wird nicht recycelt, und DNS-Änderungen werden während der Laufzeit der Anwendung nicht übernommen.
+:::
+
 ## Anfrage-Konfiguration
 
 | Gruppe | Optionen |
@@ -228,4 +268,5 @@ Axios.Net wird unter der Lizenz **AGPL-3.0-or-later** veröffentlicht.
 
 * [Quellcode](https://github.com/FrApp42/Axios.Net)
 * [NuGet-Paket: Axios.Net](https://www.nuget.org/packages/Axios.Net)
+* [NuGet-Paket: Axios.Net.Extensions.DependencyInjection](https://www.nuget.org/packages/Axios.Net.Extensions.DependencyInjection)
 * [axios-Dokumentation](https://axios.rest)

@@ -166,6 +166,46 @@ AxiosResponse<byte[]> file = await api.Get<byte[]>("/big-file", new()
 });
 ```
 
+## Injection de dépendances
+
+Le paquet `Axios.Net.Extensions.DependencyInjection` enregistre `AxiosClient` dans un conteneur `Microsoft.Extensions.DependencyInjection`.
+
+```nuget
+Install-Package Axios.Net.Extensions.DependencyInjection
+```
+
+ou avec la CLI .NET :
+
+```bash
+dotnet add package Axios.Net.Extensions.DependencyInjection
+```
+
+```cs title="Program.cs"
+using AxiosNet.Extensions.DependencyInjection;
+
+services.AddAxios(c => c.BaseUrl = "https://api.test/v1/");
+```
+
+`AxiosClient` est enregistré en singleton, il suffit donc de l'injecter là où vous en avez besoin :
+
+```cs title="UserService.cs"
+public class UserService(AxiosClient api)
+{
+    public Task<AxiosResponse<User>> Get(int id) => api.Get<User>($"/users/{id}");
+}
+```
+
+Le client envoie ses requêtes via un client nommé [`IHttpClientFactory`](https://learn.microsoft.com/dotnet/core/extensions/httpclient-factory) appelé `Axios.Net`. Chaînez dessus pour ajouter des handlers, par exemple de journalisation ou de résilience :
+
+```cs title="Program.cs"
+services.AddHttpClient("Axios.Net")
+    .AddHttpMessageHandler<MyLoggingHandler>();
+```
+
+:::note
+Le handler venant de la factory, `MaxRedirects`, `Decompress` et `Proxy` ne sont plus lus depuis la configuration de la requête : configurez-les sur le handler principal (`ConfigurePrimaryHttpMessageHandler`). Le singleton conserve aussi le handler avec lequel il a été créé : il n'est pas recyclé et les changements de DNS ne sont pas pris en compte pendant toute la durée de vie de l'application.
+:::
+
 ## Configuration de requête
 
 | Groupe | Options |
@@ -228,4 +268,5 @@ Axios.Net est publié sous licence **AGPL-3.0-or-later**.
 
 * [Code source](https://github.com/FrApp42/Axios.Net)
 * [Paquet NuGet : Axios.Net](https://www.nuget.org/packages/Axios.Net)
+* [Paquet NuGet : Axios.Net.Extensions.DependencyInjection](https://www.nuget.org/packages/Axios.Net.Extensions.DependencyInjection)
 * [Documentation d'axios](https://axios.rest)
